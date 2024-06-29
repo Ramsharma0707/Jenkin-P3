@@ -3,7 +3,7 @@ package in.co.rays.project_3.dto;
 
 /**
  * College JavaBean encapsulates College attributes
- * @author Sonali Patel
+ * @author Ram Sharma
  *
  */
 public class CollegeDTO extends BaseDTO

@@ -17,7 +17,7 @@ import in.co.rays.project_3.util.ServletUtility;
 
 /**
  * Front Functionality ctl. to perform session management operation
- * @author Sonali Patel
+ * @author Ram Sharma
  *
  */
 @WebFilter(urlPatterns={"/ctl/*","/doc/*"})

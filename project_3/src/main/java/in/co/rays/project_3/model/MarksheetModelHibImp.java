@@ -18,7 +18,7 @@ import in.co.rays.project_3.util.HibDataSource;
 
 /**
  * Hibernate implements of marksheet model
- * @author Sonali Patel
+ * @author Ram Sharma
  *
  */
 public class MarksheetModelHibImp implements MarksheetModelInt {

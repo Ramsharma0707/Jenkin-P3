@@ -11,7 +11,7 @@
 
 
 
-		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/project3</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/project_3</property>
 
 		<!-- <property name="hibernate.connection.username">root</property> <property 
 			name="hibernate.connection.password">root</property> -->

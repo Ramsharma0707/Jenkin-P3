@@ -2,7 +2,7 @@ package in.co.rays.project_3.dto;
 /**
  * Role JavaDto encapsulates role attributes
 * 
- * @author Sonali Patel
+ * @author Ram Sharma
  *
  */
 public class RoleDTO extends BaseDTO {

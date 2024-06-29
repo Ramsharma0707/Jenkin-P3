@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * Student JavaDto encapsulates student attributes
  * 
- * @author Sonali Patel
+ * @author Ram Sharma
  *
  */
 

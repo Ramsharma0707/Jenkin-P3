@@ -3,7 +3,7 @@ package in.co.rays.project_3.dto;
 /**
  * Marksheet JavaDto encapsulates marksheet attributes
 * 
- * @author Sonali Patel
+ * @author Ram Sharma
  *
  */
 

@@ -19,7 +19,7 @@ import in.co.rays.project_3.util.JDBCDataSource;
 
 /**
  * JDBC implements of Faculty model
- * @author Sonali Patel
+ * @author Ram Sharma
  *
  */
 public class FacultyModelJDBCImpl implements FacultyModelInt {

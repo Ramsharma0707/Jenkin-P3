@@ -3,7 +3,7 @@ package in.co.rays.project_3.dto;
 /**
  * Course JavaDto encapsulates course attributes
  * 
- * @author Sonali Patel
+ * @author Ram Sharma
  *
  */
 public class CourseDTO extends BaseDTO {
