@@ -2,13 +2,13 @@
 <%@page import="java.util.HashMap"%>
 <%@page import="in.co.rays.project_3.dto.IssueDTO"%>
 <%@page import="in.co.rays.project_3.controller.IssueListCtl"%>
-<%@page import="in.co.rays.project_3.dto.BankDTO"%>
+
 <%@page import="java.util.Iterator"%>
 <%@page import="java.util.List"%>
 <%@page import="in.co.rays.project_3.model.ModelFactory"%>
 <%@page import="in.co.rays.project_3.model.RoleModelInt"%>
 <%@page import="in.co.rays.project_3.util.DataUtility"%>
-<%@page import="in.co.rays.project_3.controller.BankListCtl"%>
+
 <%@page import="in.co.rays.project_3.util.HTMLUtility"%>
 <%@page import="in.co.rays.project_3.util.ServletUtility"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
@@ -119,7 +119,7 @@
 				<!-- <div class="col-sm-2"></div> -->
 				<div class="col-sm-2">
 					<input type="text" name="title" placeholder="Enter Title"
-						class="form-control"
+						class="form-control"  onkeydown="return /[a-zA-Z]/i.test(event.key)" maxlength="30"
 						value="<%=ServletUtility.getParameter("title", request)%>">
 				</div>
 
@@ -169,16 +169,16 @@
 							
 
 
-			
+			<!-- id="datepicker2" --> <!-- readonly="readonly" -->
 				<div class="col-sm-2">
-					<input type="text" name="openDate" placeholder="Enter openDate"
+					<input type="text" name="openDate"   placeholder="Enter openDate" 
 						class="form-control"
 						value="<%=ServletUtility.getParameter("openDate", request)%>">
 				</div>
 
 				
 				
-					<input type="submit" class="btn btn-primary btn-md"
+					<input type="submit"    class="btn btn-primary btn-md"
 						style="font-size: 15px" name="operation"
 						value="<%=IssueListCtl.OP_SEARCH%>"> &emsp; <input
 						type="submit" class="btn btn-dark btn-md" style="font-size: 15px"

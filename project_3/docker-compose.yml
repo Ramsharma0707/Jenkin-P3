@@ -5,7 +5,7 @@ services:
     container_name: project_3-mysql
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: project3
+      MYSQL_DATABASE: project_3
     ports:
       - "3308:3306"
     networks:
@@ -24,7 +24,7 @@ services:
     depends_on:
       - mysql
     environment:
-      - DATABASE_URL=jdbc:mysql://mysql:3306/project3
+      - DATABASE_URL=jdbc:mysql://mysql:3306/project_3
 
 networks:
   mynetwork:

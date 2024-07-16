@@ -117,14 +117,14 @@
 				<!-- <div class="col-sm-2"></div> -->
 				<div class="col-sm-2">
 					<input type="text" name="name" placeholder="Enter Name"
-						class="form-control"
+						class="form-control"  onkeydown="return /[a-zA-Z]/i.test(event.key)" maxlength="30"
 						value="<%=ServletUtility.getParameter("name", request)%>">
 				</div>
 
 				
 				<div class="col-sm-2">
 					<input type="text" name="lastEmployeeName" placeholder="Enter LastEmployeeName"
-						class="form-control"
+						class="form-control" onkeydown="return /[a-zA-Z]/i.test(event.key)" maxlength="30"
 						value="<%=ServletUtility.getParameter("lastEmployeeName", request)%>">
 				</div>
 

@@ -2,7 +2,10 @@
 <%@page import="java.util.HashMap"%>
 <%@page import="in.co.rays.project_3.dto.ProjectDTO"%>
 <%@page import="in.co.rays.project_3.controller.ProjectListCtl"%>
-<%@page import="in.co.rays.project_3.dto.BankDTO"%>
+
+
+
+
 <%@page import="java.util.Iterator"%>
 <%@page import="java.util.List"%>
 <%@page import="in.co.rays.project_3.model.ModelFactory"%>
@@ -118,8 +121,9 @@
 
 				
 				<div class="col-sm-2">
-					<input type="text" name="name" placeholder="Enter Name"
-						class="form-control"
+					<input type="text" name="name" placeholder="Enter Name"  
+						class="form-control" 	onkeydown="return /[a-zA-Z]/i.test(event.key)" maxlength="30"
+				
 						value="<%=ServletUtility.getParameter("name", request)%>">
 				</div>
 

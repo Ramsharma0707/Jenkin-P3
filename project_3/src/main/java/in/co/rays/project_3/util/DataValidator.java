@@ -312,13 +312,8 @@ public class DataValidator {
 	 * @param args :args
 	 */
 	public static void main(String[] args) {
-//	  System.out.println(isNull("ssd"));
-//	  System.out.println(isNotNull(""));//dought
-//	  System.out.println(isInteger("2147483649"));
-//	  System.out.println(isLong("50.5"));
-//	  System.out.println(isEmail("rah@g.com"));
-//	  System.out.println(isDate("18/11/1989"));
-		System.out.println(isName("Ankur Agrawal"));
+
+
 	}
 
 }

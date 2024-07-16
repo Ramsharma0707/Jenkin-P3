@@ -27,7 +27,7 @@ public class ProjectListCtl extends BaseCtl {
 		map.put("st", "st");
 		map.put("sc", "sc");
 		map.put("obc", "obc");
-		map.put("genral", "genral");
+		map.put("general", "general");
 
 request.setAttribute("categoryp", map);
 	}

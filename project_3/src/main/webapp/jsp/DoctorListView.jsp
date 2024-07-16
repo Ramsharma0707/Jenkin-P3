@@ -18,6 +18,20 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<script type="text/javascript">
+	function validateMobileNo(event) {
+		const input = event.target;
+		input.value = input.value.replace(/[^0-9.]/g, '')
+		if (input.value.length > 0 && input.value[0]<= '5') {
+			input.value = '';
+		}
+	}
+</script> 
+
+
+
 <title>Doctor List</title>
 <script src="<%=ORSView.APP_CONTEXT%>/js/jquery.min.js"></script>
 <script type="text/javascript"
@@ -113,13 +127,13 @@
 				<!-- <div class="col-sm-2"></div> -->
 				<div class="col-sm-2">
 					<input type="text" name="name" placeholder="Enter Name"
-						class="form-control"
+						class="form-control" onkeydown="return /[a-zA-Z]/i.test(event.key)" maxlength="30"
 						value="<%=ServletUtility.getParameter("name", request)%>">
 				</div>
 
 				<div class="col-sm-2">
 					<input type="text" name="mobile" placeholder="Enter mobile"
-						class="form-control"
+						class="form-control"  oninput="validateMobileNo(event)" name="mobile" maxlength="10"
 						value="<%=ServletUtility.getParameter("mobile", request)%>">
 				</div>
 

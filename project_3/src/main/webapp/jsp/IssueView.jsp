@@ -2,7 +2,7 @@
 <%@page import="java.util.List"%>
 <%@page import="in.co.rays.project_3.controller.IssueCtl"%>
 
-<%@page import="in.co.rays.project_3.controller.BankCtl"%>
+
 <%@page import="java.util.HashMap"%>
 <%@page import="in.co.rays.project_3.util.HTMLUtility"%>
 <%@page import="in.co.rays.project_3.util.DataUtility"%>
@@ -134,23 +134,25 @@ i.css {
 								</div>
 								<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("title", request)%></font></br>
 
-
-
-
-								<span class="pl-sm-5"><b>Description</b> <span
+	<span class="pl-sm-5"><b>Description</b> <span
 									style="color: red;">*</span></span></br>
+															
+
+									
 								<div class="col-sm-12">
 									<div class="input-group">
 										<div class="input-group-prepend">
 											<div class="input-group-text">
 												<i class="fa fa-user-circle grey-text"
-													style="font-size: 1rem;"></i>
-											</div>
-										</div>
-										<textarea type="text" class="form-control" name="description"
+													style="font-size: 1rem;"></i></div> </div>
+										<%-- <textarea type="text" class="form-control" name="description"
 										 maxlength="200"
 											placeholder="Description"
-											value="<%=DataUtility.getStringData(dto.getDescription())%>"></textarea>
+											value="<%=DataUtility.getStringData(dto.getDescription())%>"></textarea> --%>
+									
+									<td><textarea name="description" rows="5" cols="55"><%=DataUtility.getStringData(dto.getDescription())%></textarea></td>
+									
+									
 									</div>
 								</div>
 								<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("description", request)%></font></br>
